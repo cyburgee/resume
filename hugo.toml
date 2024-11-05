@@ -1,0 +1,193 @@
+# Page settings
+baseURL = "http://example.org/"
+languageCode = "en"
+title = "Collin Burger - Resumé/CV"
+theme = "hugo-devresume-theme"
+#googleAnalytics = "UA-XXXXXXX-Y"
+
+
+[params]
+    author = "cyburgee"
+    description = "Collin's Very Professional Resumé"
+
+    primaryColor = "#54B68F"
+    darkMode = true
+
+    [params.profile]
+        enable = true
+        name = "Collin Burger"
+        tagline = "Problem Solver"
+        avatar = "itme.png"
+
+    [params.contact]
+        enable = true
+        location = "Los Angeles / World Wide Web"
+
+        [[params.contact.list]]
+        icon = "fas fa-file-pdf"
+        url = "/assets/CollinBurger_CV_2024.pdf"
+        text = "Printable PDF"
+        [[params.contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:collin.e.burger@gmail.com"
+        text = "collin.e.burger@gmail.com"
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "Technical"
+        [[params.skills.list.items]]
+        details = "Scala/Java"
+        [[params.skills.list.items]]
+        details = "Python"
+        [[params.skills.list.items]]
+        details = "CDN Configuration"
+        [[params.skills.list.items]]
+        details = "PostgreSQL/MySQL/NoSQL"
+        [[params.skills.list.items]]
+        details = "AWS/GCP"
+        [[params.skills.list.items]]
+        details = "Design, lead, and deliver scalable software systems"
+
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "BS + MS in Electrical and Computer Engineering"
+        university = "Carnegie Mellon University"
+        dates = "2009-2014"
+
+
+    [params.awards]
+        enable = false
+
+        [[params.awards.list]]
+        name = "Award Lorem Ipsum"
+        body = "Microsoft lorem ipsum"
+        date = "2019"
+        [[params.awards.list]]
+        name = "Award Donec Sodales"
+        body = "Oracle Aenean"
+        date = "2017"
+
+
+    [params.languages]
+        enable = false
+
+        [[params.languages.list]]
+        name = "English"
+        level = "Native"
+        [[params.languages.list]]
+        name = "Spanish"
+        level = "Formerly Fluent"
+
+
+    [params.interests]
+        enable = true
+
+        [[params.interests.list]]
+        name = "Tennis"
+        [[params.interests.list]]
+        name = "PC Gaming"
+        [[params.interests.list]]
+        name = "Guitar"
+        [[params.interests.list]]
+        name = "Doggies"
+        [[params.interests.list]]
+        name = "Greek Yogurt"
+
+
+    [params.summary]
+        enable = true
+        text = "Technical leader with a decade of experience scaling products to deliver media to hundreds of millions of users. Passionate about providing solutions with the best product experience in mind. Open to new opportunities."
+
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        title = "Principal Engineer"
+        dates = "2023 - 2024"
+        company = "GIPHY"
+        details = "Held broad technical oversight of engineering organization by advising on or leading cross-team engineering efforts. Remained as technical lead of Content Tools team."
+        [[params.experience.list.items]]
+        details = "Lead the architecture of the real-time data stream system to log billions of search requests per day. Coordinated with the Data Infrastructure and SRE teams to provide a self-service solution that enabled developers to build business critical products like trending content and API consumer rate-limiting."
+        [[params.experience.list.items]]
+        details = "Refactored the core video processing systems to use a custom Scala wrapper of FFmpeg. Updated codecs and encoding settings yielded tens of thousands of dollars saved per month in cloud storage and CDN bandwidth costs."
+        [[params.experience.list.items]]
+        details = "Served on the engineering steering committee that identified and planned long-term projects to alleviate organizational pain points, inconsistencies, and bottlnecks."
+
+        [[params.experience.list]]
+        title = "Tech Lead, Content Tools"
+        dates = "2020 - 2023"
+        company = "GIPHY"
+        details = "Technical lead of media ingestion, processing, storage, moderation, curation, and delivery systems. Content Tools systems provided all direct media handling as well as collecting and processing relevant metadata from automated and human sources. Worked closely with stakeholders across the company such as the Trust & Safety, Moderation, and Editorial teams to build and maintain bespoke content management systems that accelerated their workflows. "
+        [[params.experience.list.items]]
+        details = "Led a multi-quarter effort to design and deliver a new in-house moderation CMS. Collaborated extensively with Trust & Safety and Moderation teams to provide a solution that achieved the highest levels of content safety for 3rd-party content distributors."
+        [[params.experience.list.items]]
+        details = "Drove a cross-team CDN project to enable the configuration and execution of A/B testing search algorithms. Bucketing users into experiment groups at the edge while maintaining high cache hit ratios enabled the Search team to test across the entire range of GIPHY API users rather than just O&O properties."
+        [[params.experience.list.items]]
+        details = "Served as technical project manager on a collaboration with Meta to build a custom API product to provide users with media suggestions that aligned with their interests and intent. The product presented massive scale challenges as it was a critical part of Facebook user communication features."
+
+        [[params.experience.list]]
+        title = "Tech Lead, Content Engineering"
+        dates = "2016 - 2020"
+        company = "GIPHY"
+        details = "Technical lead for media handling systems and products. This era of massive growth for GIPHY brought a challenge to acquire increasing amounts of content which required extensive restructuring of our media processing approaches."
+        [[params.experience.list.items]]
+        details = "Oversaw the centralization of the metadata collection and moderation pipeline into a cohesive system handling over 500 thousand tasks per day. Unified disparate systems into a single Celery application that enabled the frequent addition of new metadata sources and adjustment of automated decision-making flows."
+        [[params.experience.list.items]]
+        details = "Built a novel CMS for the content acquisition team to efficiently process entire video series and films and intelligently transform them into short clips based on shot change detection and caption data."
+
+        [[params.experience.list]]
+        title = "Engineer"
+        dates = "2015 - 2016"
+        company = "GIPHY"
+        details = "Joined the API team to restructure the media processing pipeline. Designed and implemented systems to handle the increasing requirements of different media formats to handle GIPHY's growing list of API clients."
+
+        [[params.experience.list]]
+        title = "Hacker in Residence"
+        dates = "2014 - 2015"
+        company = "GIPHY"
+        details = "Built internal tools for analyzing and processing long-form video into GIF-appropriate clips."
+
+
+    [params.projects]
+        enable = false
+
+        [[params.projects.list]]
+        title = "Project Lorem Ipsum"
+        meta = "Open Source"
+        tagline = "You can use this section for your side projects. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+
+
+    [params.information]
+        enable = false
+
+        [[params.information.list]]
+        title = "Papers"
+        [[params.information.list.items]]
+        details = "2018 · Lorem Ipsum"
+        [[params.information.list.items]]
+        details = "2016 · Sed Fringilla"
+        [[params.information.list]]
+        title = "Interests"
+        details = "Climbing, Snowboarding, Photography, Travelling"
+
+
+    [params.social]
+        enable = false
+
+        [[params.social.list]]
+        icon = "fab fa-github-square"
+        url = "//github.com/username"
+        title = "username"
+        [[params.social.list]]
+        icon = "fab fa-linkedin"
+        url = "//linkedin.com/in/username"
+        title = "username"
+        [[params.social.list]]
+        icon = "fab fa-twitter-square"
+        url = "//twitter.com/username"
+        title = "@username"
