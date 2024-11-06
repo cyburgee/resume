@@ -1,14 +1,14 @@
 # Page settings
 baseURL = "http://example.org/"
 languageCode = "en"
-title = "Collin Burger - Resumé/CV"
+title = "Collin Burger's Resume"
 theme = "hugo-devresume-theme"
 #googleAnalytics = "UA-XXXXXXX-Y"
 
 
 [params]
-    author = "cyburgee"
-    description = "Collin's Very Professional Resumé"
+    author = "Collin Burger"
+    description = "Collin Burger's Very Professional Resumé"
 
     primaryColor = "#54B68F"
     darkMode = true
@@ -43,9 +43,15 @@ theme = "hugo-devresume-theme"
         [[params.skills.list.items]]
         details = "PostgreSQL/MySQL/NoSQL"
         [[params.skills.list.items]]
-        details = "CDN Configuration"
-        [[params.skills.list.items]]
         details = "AWS/GCP"
+        [[params.skills.list.items]]
+        details = "FFmpeg"
+        [[params.skills.list.items]]
+        details = "Fastly"
+        [[params.skills.list.items]]
+        details = "Datadog"
+        [[params.skills.list.items]]
+        details = "Tableau"
         [[params.skills.list.items]]
         details = "Docker/Kubernetes"
         [[params.skills.list.items]]
@@ -114,23 +120,23 @@ theme = "hugo-devresume-theme"
         title = "Principal Engineer"
         dates = "2023 - 2024"
         # company = "GIPHY"
-        details = "Held broad technical oversight of engineering organization by advising on or leading cross-team engineering efforts. Retained prior responsibilies."
+        details = "Held broad technical oversight of engineering organization. Advised and led cross-team engineering efforts while retaining prior responsibilies as tech lead."
         [[params.experience.list.items]]
-        details = "Lead the architecture of the real-time data stream system to log billions of search requests per day. Coordinated with the Data Infrastructure and SRE teams to provide a self-service solution that enabled developers to build business critical products like trending content and API consumer rate-limiting."
+        details = "Led the architecture of the real-time data stream system to log billions of search requests per day via Kafka. Coordinated with the Data Infrastructure and SRE teams to provide a self-service solution that enabled developers to build business critical products like trending content and API consumer rate-limiting."
         [[params.experience.list.items]]
         details = "Refactored the core video processing systems to use a custom Scala wrapper of FFmpeg. Updated codecs and encoding settings yielded tens of thousands of dollars saved per month in cloud storage and CDN bandwidth costs."
         [[params.experience.list.items]]
-        details = "Served on the engineering steering committee that identified and planned long-term projects to alleviate organizational pain points, inconsistencies, and bottlnecks."
+        details = "Served on the engineering steering committee that identified and planned long-term initiatives to alleviate organizational pain points, inconsistencies, and bottlenecks. Themes for projects included the consolidation of CI/CD pipelines across microservice deployments and increasing consistency of observability and alerting to improve the on-call experience."
 
         [[params.experience.list]]
         title = "Tech Lead, Content Tools"
         dates = "2020 - 2023"
         # company = "GIPHY"
-        details = "Technical lead of media ingestion, processing, storage, moderation, curation, and delivery systems. Worked closely with stakeholders across the company such as the Trust & Safety, Moderation, and Editorial teams to build and maintain bespoke content management systems that accelerated their workflows. "
+        details = "Technical lead of media ingestion, processing, storage, moderation, curation, and delivery systems. Worked closely with the Editorial, Trust & Safety, and Moderation teams to build and maintain bespoke content management systems to accelerate their workflows."
         [[params.experience.list.items]]
         details = "Led a multi-quarter effort to design and deliver a new in-house moderation CMS built on Django, Celery, and React. Collaborated extensively with Trust & Safety and Moderation teams to provide a solution that achieved the highest levels of content safety for 3rd-party content distributors."
         [[params.experience.list.items]]
-        details = "Drove a cross-team CDN project to enable the configuration and execution of A/B testing search algorithms. Bucketing users into experiment groups at the edge while maintaining high cache hit ratios enabled the Search team to test across the entire range of GIPHY API users rather than just O&O properties."
+        details = "Drove a cross-team CDN project to enable the configuration and execution of A/B testing search algorithms. Bucketing users into experiment groups at the edge while maintaining high cache hit ratios enabled the Search team to test on millions of GIPHY API search sessions daily."
         [[params.experience.list.items]]
         details = "Served as technical project manager on a collaboration with Meta to build a custom API product to provide users with media suggestions that aligned with their interests and intent. The product presented massive scale challenges as it was a critical part of Facebook user communication features."
 
@@ -140,7 +146,7 @@ theme = "hugo-devresume-theme"
         # company = "GIPHY"
         details = "Technical lead for media handling systems and products. This era of massive growth for GIPHY brought a challenge to acquire increasing amounts of content which required extensive restructuring of our media processing approaches."
         [[params.experience.list.items]]
-        details = "Oversaw the centralization of the metadata collection and moderation pipeline into a cohesive system handling over 500 thousand tasks per day. Unified disparate systems into a single Celery application that enabled the frequent addition of new metadata sources and adjustment of automated decision-making flows."
+        details = "Oversaw the centralization of the metadata collection and moderation pipeline into a cohesive system that scaled to over 500 thousand tasks per day. Unified disparate systems into a single Celery application that enabled the frequent adjustment of automated decision-making flows."
         [[params.experience.list.items]]
         details = "Built a novel CMS for the content acquisition team to efficiently process entire video series and films and intelligently transform them into short clips based on shot change detection and caption data."
 
@@ -148,13 +154,13 @@ theme = "hugo-devresume-theme"
         title = "Engineer"
         dates = "2015 - 2016"
         # company = "GIPHY"
-        details = "Joined the API team to restructure the media processing pipeline. Designed and implemented systems to handle the increasing requirements of different media formats to handle GIPHY's growing list of API clients."
+        details = "Joined the API team to restructure the media processing pipeline. Designed and implemented systems to handle the increasing requirements of different media formats for GIPHY's growing list of API clients."
 
         [[params.experience.list]]
         title = "Hacker in Residence"
         dates = "2014 - 2015"
         # company = "GIPHY"
-        details = "Built internal tools for analyzing and processing long-form video into GIF-appropriate clips."
+        details = "Built internal tools to analyze and process long-form video into GIF-appropriate clips."
 
 
     [params.projects]
