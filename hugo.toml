@@ -120,7 +120,7 @@ theme = "hugo-devresume-theme"
         title = "Principal Engineer"
         dates = "2023 - 2024"
         # company = "GIPHY"
-        details = "Held broad technical oversight of engineering organization. Advised and led cross-team engineering efforts while retaining prior responsibilies as tech lead."
+        details = "Held broad technical oversight of the engineering organization. Advised and led cross-team engineering efforts while retaining prior responsibilities as tech lead."
         [[params.experience.list.items]]
         details = "Led the architecture of the real-time data stream system to log billions of search requests per day via Kafka. Coordinated with the Data Infrastructure and SRE teams to provide a self-service solution that enabled developers to build business critical products like trending content and API consumer rate-limiting."
         [[params.experience.list.items]]
@@ -136,7 +136,7 @@ theme = "hugo-devresume-theme"
         [[params.experience.list.items]]
         details = "Led a multi-quarter effort to design and deliver a new in-house moderation CMS built on Django, Celery, and React. Collaborated extensively with Trust & Safety and Moderation teams to provide a solution that achieved the highest levels of content safety for 3rd-party content distributors."
         [[params.experience.list.items]]
-        details = "Drove a cross-team CDN project to enable the configuration and execution of A/B testing search algorithms. Bucketing users into experiment groups at the edge while maintaining high cache hit ratios enabled the Search team to test on millions of GIPHY API search sessions daily."
+        details = "Drove a cross-team CDN project to enable the configuration and execution of A/B testing search algorithms. Bucketing users into experiment groups at the edge while maintaining high cache hit ratios enabled the Search team to test on millions of API search sessions daily."
         [[params.experience.list.items]]
         details = "Served as technical project manager on a collaboration with Meta to build a custom API product to provide users with media suggestions that aligned with their interests and intent. The product presented massive scale challenges as it was a critical part of Facebook user communication features."
 
@@ -148,7 +148,9 @@ theme = "hugo-devresume-theme"
         [[params.experience.list.items]]
         details = "Oversaw the centralization of the metadata collection and moderation pipeline into a cohesive system that scaled to over 500 thousand tasks per day. Unified disparate systems into a single Celery application that enabled the frequent adjustment of automated decision-making flows."
         [[params.experience.list.items]]
-        details = "Built a novel CMS for the content acquisition team to efficiently process entire video series and films and intelligently transform them into short clips based on shot change detection and caption data."
+        details = "Built a novel CMS for the content acquisition team to efficiently process entire video series and films and intelligently transform them into short clips based on shot change detection and caption data using FFmpeg via Kubernetes workers."
+        [[params.experience.list.items]]
+        details = "Led the backend development of user-facing GIF creation tools. Collaborated closely with frontend developers to efficiently handle different media processing tasks server-side versus client-side depending on edit operation and file types."
 
         [[params.experience.list]]
         title = "Engineer"
