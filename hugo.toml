@@ -1,5 +1,5 @@
 # Page settings
-baseURL = "http://example.org/"
+# baseURL = "http://example.org/"
 languageCode = "en"
 title = "Collin Burger's Resume"
 theme = "hugo-devresume-theme"
@@ -25,7 +25,9 @@ theme = "hugo-devresume-theme"
 
         [[params.contact.list]]
         icon = "fas fa-file-pdf"
-        url = "/assets/CollinBurger_CV_2024.pdf"
+        url = "/resume/assets/CollinBurger_CV_2024.pdf"
+        # uncomment below for dev
+        # url = "/assets/CollinBurger_CV_2024.pdf"
         text = "Printable PDF"
         [[params.contact.list]]
         icon = "fas fa-envelope-square"
