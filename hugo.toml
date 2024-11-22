@@ -43,7 +43,13 @@ theme = "hugo-devresume-theme"
         [[params.skills.list.items]]
         details = "Python"
         [[params.skills.list.items]]
+        details = "PHP"
+        [[params.skills.list.items]]
         details = "PostgreSQL/MySQL/NoSQL"
+        [[params.skills.list.items]]
+        details = "REST APIs"
+        [[params.skills.list.items]]
+        details = "gRPC Microservices"
         [[params.skills.list.items]]
         details = "AWS/GCP"
         [[params.skills.list.items]]
@@ -55,7 +61,11 @@ theme = "hugo-devresume-theme"
         [[params.skills.list.items]]
         details = "Tableau"
         [[params.skills.list.items]]
-        details = "Docker/Kubernetes"
+        details = "Docker"
+        [[params.skills.list.items]]
+        details = "Kubernetes"
+        [[params.skills.list.items]]
+        details = "Terraform"
         [[params.skills.list.items]]
         details = "Django"
         [[params.skills.list.items]]
