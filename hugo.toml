@@ -25,9 +25,9 @@ theme = "hugo-devresume-theme"
 
         [[params.contact.list]]
         icon = "fas fa-file-pdf"
-        url = "/resume/assets/CollinBurger_CV_2024.pdf"
+        url = "/resume/assets/CollinBurger_CV_01_2025.pdf"
         # uncomment below for dev
-        # url = "/assets/CollinBurger_CV_2024.pdf"
+#         url = "/assets/CollinBurger_CV_01_2025.pdf"
         text = "Printable PDF"
         [[params.contact.list]]
         icon = "fas fa-envelope-square"
@@ -39,11 +39,13 @@ theme = "hugo-devresume-theme"
 
         [[params.skills.list]]
         [[params.skills.list.items]]
+        details = "Software Architecture"
+        [[params.skills.list.items]]
+        details = "Project Management"
+        [[params.skills.list.items]]
         details = "Scala/Java"
         [[params.skills.list.items]]
         details = "Python"
-        [[params.skills.list.items]]
-        details = "PHP"
         [[params.skills.list.items]]
         details = "PostgreSQL/MySQL/NoSQL"
         [[params.skills.list.items]]
@@ -122,7 +124,8 @@ theme = "hugo-devresume-theme"
     [params.summary]
         enable = true
 
-        text = "Technical leader with a decade of experience scaling products to deliver media to hundreds of millions of users. Passionate about providing solutions with the best product experience in mind."
+        text = """Technical leader with a decade of experience scaling products to deliver media to hundreds of \
+        millions of users. Passionate about providing solutions with the best product experience in mind."""
 
 
     [params.experience]
@@ -132,51 +135,80 @@ theme = "hugo-devresume-theme"
         title = "Principal Engineer"
         dates = "2023 - 2024"
         # company = "GIPHY"
-        details = "Held broad technical oversight of the engineering organization. Advised and led cross-team engineering efforts while retaining prior responsibilities as tech lead."
+        details = """Held broad technical oversight of the engineering organization. Advised and led cross-team \
+        engineering efforts while retaining prior responsibilities as Content Tools tech lead."""
         [[params.experience.list.items]]
-        details = "Led the architecture of the real-time data stream system to log billions of search requests per day via Kafka. Coordinated with the Data Infrastructure and SRE teams to provide a self-service solution that enabled developers to build business critical products like trending content and API consumer rate-limiting."
+        details = """Led the architecture of the real-time data stream system to log billions of search requests per \
+        day via Kafka. Coordinated with the Data Infrastructure and SRE teams to provide a self-service solution that \
+        empowered developers to build business critical products like trending content and API consumer rate-limiting."""
         [[params.experience.list.items]]
-        details = "Refactored the core video processing systems to use a custom Scala wrapper of FFmpeg. Updated codecs and encoding settings yielded tens of thousands of dollars saved per month in cloud storage and CDN bandwidth costs."
+        details = """Refactored the core video processing systems to use a custom Scala wrapper of FFmpeg. Updated \
+        codecs and encoding settings saved tens of thousands of dollars per month in cloud storage and CDN bandwidth costs."""
         [[params.experience.list.items]]
-        details = "Served on the engineering steering committee that identified and planned long-term initiatives to alleviate organizational pain points, inconsistencies, and bottlenecks. Themes for projects included the consolidation of CI/CD pipelines across microservice deployments and increasing consistency of observability and alerting to improve the on-call experience."
+        details = """Served on the engineering steering committee that identified and planned long-term initiatives to \
+        alleviate organizational pain points, inconsistencies, and bottlenecks. Themes for projects included the \
+        consolidation of CI/CD pipelines across microservice deployments and increasing consistency of observability \
+        and alerting to improve the on-call experience."""
         [[params.experience.list.items]]
-        details = "Produced data pipelines for moderation data with Redshift materialized views, Spark batch jobs, and Tableau dashboards to assist the Trust & Safety division with DSA-compliant reporting."
+        details = """Produced data pipelines for moderation data with Redshift materialized views, Spark batch jobs, \
+        and Tableau dashboards to assist the Trust & Safety division with DSA-compliant reporting."""
 
         [[params.experience.list]]
         title = "Tech Lead, Content Tools"
         dates = "2020 - 2023"
         # company = "GIPHY"
-        details = "Technical lead of media ingestion, processing, storage, moderation, curation, and delivery systems. Worked closely with the Editorial, Trust & Safety, and Moderation teams to build and maintain bespoke content management systems to accelerate their workflows."
+        details = """Technical lead of media ingestion, processing, storage, moderation, curation, and delivery \
+        systems. Worked closely with the Editorial, Trust & Safety, and Moderation teams to build and maintain bespoke \
+        content management systems to accelerate their workflows."""
         [[params.experience.list.items]]
-        details = "Led a multi-quarter effort to design and deliver a new in-house moderation CMS built on Django, Celery, and React. Collaborated extensively with Trust & Safety and Moderation teams to provide a solution that achieved the highest levels of content safety for 3rd-party content distributors."
+        details = """Led a multi-quarter effort to design and deliver a new in-house moderation CMS built on Django, \
+        Celery, and React. Collaborated extensively with Trust & Safety and Moderation teams to provide a solution that \
+        achieved the highest levels of content safety for 3rd-party content distributors."""
         [[params.experience.list.items]]
-        details = "Drove a cross-team CDN project to enable the configuration and execution of A/B testing search algorithms. Bucketing users into experiment groups at the edge while maintaining high cache hit ratios enabled the Search team to test on millions of API search sessions daily."
+        details = """Acted as project manager for creating a year-long effort to create a new content type vertical. \
+        Coordinated technical and product requirements across all of engineering to bring longer-form video content to \
+        the platform and API offerings."""
         [[params.experience.list.items]]
-        details = "Served as technical project manager on a collaboration with Meta to build a custom API product to provide users with media suggestions that aligned with their interests and intent. The product presented massive scale challenges as it was a critical part of Facebook user communication features."
+        details = """Drove a cross-team CDN project to enable the configuration and execution of A/B testing search \
+        algorithms. Bucketing users into experiment groups at the edge while maintaining high cache hit ratios allowed \
+        the Search team to test on millions of API search sessions daily."""
+        [[params.experience.list.items]]
+        details = """Served as technical project manager on a collaboration with Meta to build a custom API product \
+        to provide users with media suggestions that aligned with their interests and intent. The product presented \
+        massive scale challenges as it was a critical part of Facebook user communication features."""
 
         [[params.experience.list]]
         title = "Tech Lead, Content Engineering"
         dates = "2016 - 2020"
         # company = "GIPHY"
-        details = "Technical lead for media handling systems and products. This era of massive growth for GIPHY brought a challenge to acquire increasing amounts of content which required extensive restructuring of our media processing approaches."
+        details = """Technical lead for media handling systems and products. This era of massive growth for GIPHY \
+        brought a challenge to acquire increasing amounts of content which required extensive restructuring of our \
+        media processing approaches."""
         [[params.experience.list.items]]
-        details = "Oversaw the centralization of the metadata collection and moderation pipeline into a cohesive system that scaled to over 500 thousand tasks per day. Unified disparate systems into a single Celery application that enabled the frequent adjustment of automated decision-making flows."
+        details = """Oversaw the centralization of the metadata collection and moderation pipeline into a cohesive \
+        system that scaled to over 500 thousand tasks per day. Unified disparate systems into a single Celery \
+        application that enabled the frequent adjustment of automated decision-making flows."""
         [[params.experience.list.items]]
-        details = "Built a novel CMS for the content acquisition team to efficiently process entire video series and films and intelligently transform them into short clips based on shot change detection and caption data using FFmpeg via Kubernetes workers."
+        details = """Architected a novel CMS for the content acquisition team to efficiently process entire video series and \
+        films and intelligently transform them into short clips based on shot change detection and caption data using \
+        FFmpeg via Kubernetes workers."""
         [[params.experience.list.items]]
-        details = "Led the backend development of user-facing GIF creation tools. Collaborated closely with frontend developers to efficiently handle different media processing tasks server-side versus client-side depending on edit operation and file types."
+        details = """Led the backend development of user-facing GIF creation tools. Collaborated closely with frontend \
+        developers to efficiently handle different media processing tasks server-side versus client-side depending on \
+        edit operation and file types."""
 
         [[params.experience.list]]
         title = "Engineer"
         dates = "2015 - 2016"
         # company = "GIPHY"
-        details = "Joined the API team to restructure the media processing pipeline. Designed and implemented systems to handle the increasing requirements of different media formats for GIPHY's growing list of API clients."
+        details = """Joined the API team to restructure the media processing pipeline. Designed and implemented \
+        systems to handle the increasing requirements of different media formats for GIPHY's growing list of API clients."""
 
         [[params.experience.list]]
         title = "Hacker in Residence"
         dates = "2014 - 2015"
         # company = "GIPHY"
-        details = "Built internal tools to analyze and process long-form video into GIF-appropriate clips."
+        details = """Developed internal tools to analyze and process long-form video into GIF-appropriate clips."""
 
 
     [params.projects]
